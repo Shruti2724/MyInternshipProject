@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce product page</title>
+  <link rel="stylesheet" href="styles3.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="">
+      <div class="menus">
+        <img src="iconmenu.png" onclick="closeNav()" class="hamburgur" alt="" />
+        <img src="logo.png" alt="logo" class="logo" />
+        <div class="links show_nav">
+          <img onclick="closeNav()" src="iconclose .webp" alt="" />
+          <a href="">Collections</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart_item">
+          <img src="iconcart.svg" alt="" />
+          <div class="cart_item_no">0</div>
+          <div class="cart_items">
+            <h1>Cart</h1>
+            <div class="items">
+              <div class="empty">your cart is empty</div>
+              <div class="fill">
+                <div>
+                  <img class="product_image" src="image1.jpeg" alt="" />
+                  <div class="product_detail">
+                    <h2>Fall Limited Edition Sport Shoes</h2>
+                    <p class="final_price">final price</p>
+                  </div>
+                  <img onclick="delete_cart()" src="icondelete.webp" alt="" class="delete" />
+                </div>
+                <button class="checkout">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="avatar.jpeg" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="gallery">
+        <div class="main_image_box">
+          <div onclick="changeMainImage('prev')" class="change_icon prev">
+            <img class=" " src="iconprev.png" alt="" />
+          </div>
+          <div onclick="changeMainImage('next')" class="change_icon next">
+            <img class=" " src="iconnext.png" alt="" />
+          </div>
+          <img src="image1.jpeg" class="main_image" alt="" />
+        </div>
+        <div class="all_main_images">
+          <img class="active" src="image1.jpeg" alt="" />
+          <img src="image2.jpeg" alt="" />
+          <img src="image3.webp" alt="" />
+          
+        </div>
+      </div>
+      <div class="detail">
+        <p class="company_name">Sport Shoes Company</p>
+        <h1 class="item_name">Fall Limited Edition Sport Shoes</h1>
+        <p class="item_detail">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole.
+          they'll withstand everything the weather can offer.
+        </p>
+        <div class="rs">
+          <h2>Rs 2999<sup> 50%</sup></h2>
+          <p>Rs 5999</p>
+        </div>
+        <div class="add_to_cart">
+          <div class="counter">
+            <div onclick="select_items('plus')" class="plus">
+              <img src="iconplus.png" />
+            </div>
+            <div class="price">0</div>
+            <div onclick="select_items('minus')" class="minus">
+              <img src="iconminus.png" alt="" />
+            </div>
+          </div>
+          <button onclick="addtocart()">
+            <img src="./image/add_o_cart.svg" alt="" /> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="model">
+    <div class="cross">
+      <h2 class="esc">ESC</h2>
+    </div>
+
+    <div class="main_model_image">
+      <div onclick="change('prev')" class="change_icon prev">
+        <img class=" " src="iconprev.png" alt="" />
+      </div>
+      <div onclick="change('next')" class="change_icon next">
+        <img class=" " src="iconnext.png" alt="" />
+      </div>
+      <img src="image1.jpeg" alt="" />
+    </div>
+    <div class="all_model_images">
+      <div>
+        <img src="image1.jpeg" alt="" class="image active" />
+      </div>
+      <div>
+        <img src="image2.jpeg" alt="" class="image" />
+      </div>
+      <div>
+        <img src="image3.webp" alt="" class="image" />
+      </div>
+      
+    </div>
+  </div>
+  - < <script src="script.js">
+    </script>
+</body>
+
+</html>
